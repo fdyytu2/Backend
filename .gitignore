@@ -1,0 +1,66 @@
+# ===================================================
+# PPOB Super App - Enterprise .gitignore
+# ===================================================
+
+# --- Python Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# --- Virtual Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Database Files ---
+*.db
+*.sqlite
+*.sqlite3
+app.db
+
+# --- Logs ---
+logs/
+*.log
+*.log.*
+
+# --- Distribution / Build ---
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# --- Testing ---
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+nosetests.xml
+test-results/
+
+# --- Editors & IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# --- Alembic ---
+migrations/versions/__pycache__/
+
+# --- Runtime ---
+*.pid
+*.sock
+maintenance_mode.json
+
+# --- Secrets ---
+.env.local
+.env.production
+secrets.json
+credentials.json
